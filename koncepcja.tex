@@ -1,0 +1,102 @@
+\documentclass[10pt,a4paper,notitlepage]{article}
+\usepackage{fullpage}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\title{Dziennik elektroniczny}
+\author{Fatoumata Bocar, Radosław Błażewicz}
+\date{}
+\begin{document}
+\maketitle
+\section{Wstęp}
+Celem projektu jest stworzenie bazy danych o funkcjonalności dziennika elektronicznego. Ma ona umożliwiać zarządzanie ocenami uczniów z poziomu nauczyciela oraz ich oglądanie z punktu widzenia ucznia oraz rodzica. Dla różnych grup użytkowników dostępne są różne operacje, w szczególności wyłącznie kadra pedagogiczna ma możliwość zmiany bądź wprowadzenia nowych danych.
+Do stworzonej bazy danych dołączony będzie obsługiwany przez przeglądarkę interfejs graficzny umożliwiający jej obsługę.
+
+\section{Wydajność}
+Baza danych ma być zdolna do przetworzenia rekordów w minimalnie następujących liczbach:
+\begin{itemize}
+
+
+\item 6 klas
+\item 8 przedmiotów
+\item 30 uczniów na klasę - 180 uczniów
+\item 20 ocen z przedmiotu  na ucznia - 2880 ocen
+\item obecności wszystkich uczniów w ciągu roku (200 na ucznia) - 36000 obecności
+\item pozostałe rekordy szacowane na 5000
+\end{itemize}
+daje łącznie możliwość przetworzenia ok. 45 000 rekordów. 
+\section{Przetwarzane grupy danych}
+\begin{itemize}
+	\item Uczniowie (i rodzice)
+	\item Nauczyciele
+	\item Przedmioty
+	\item Oceny
+	\item Obecności
+	\item Klasy
+	\item Osoby
+	\item Kontakty
+	\item Rodzaje ocen
+	\item Rodzaje kontaktów
+	\item Opiekunowie
+	\item Uwagi
+	\item Obecności
+
+\end{itemize}
+
+\section{Funkcjonalności}
+\begin{itemize}
+\item Nauczyciel:
+\begin{itemize}
+\item Dodawanie, usuwanie i modyfikacja ocen ze swojego przedmiotu
+\item Wstawianie uwag
+\item Wyświetlenie ocen ze swojego przedmiotu
+\item Dodawanie obecności
+\end{itemize}
+\item Wychowawca:
+\begin{itemize}
+\item Dodawanie, usuwanie i modyfikacja ocen z zachowania swojej klasy
+\item Wstawianie uwag
+\item Wyświetlenie ocen swojej klasy
+\item Modyfikacja danych osobowych i kontaktowych swoich uczniów
+\item Dodawanie obecności
+\item Edycja danych ucznia
+\end{itemize}
+
+
+\item Uczeń i rodzic:
+\begin{itemize}
+\item Wyświetlenie swoich ocen
+\item Wyświetlenie swoich uwag
+\end{itemize}
+
+
+\item Administrator
+\begin{itemize}
+\item Możliwość modyfikacji wszystkich rekordów
+\item Modyfikacja praw dostępu
+\end{itemize}
+\end{itemize}
+
+
+\section{Wymagania niefunkcjonalne}
+\subsection{Skalowalnosć}
+\begin{itemize}
+\item Projekt będzie tworzony w sposób umożliwiający rozbudowanie bazy danych
+\item Powinien działać na zestawach danych porównywalnych ze zbiorem testowym - np. szkoła 300 osób + 40 nauczycieli
+\item Możliwość rozbudowy o dodatkowe elementy i funkcjonalności
+\end{itemize}
+
+\subsection{Bezpieczeństwo}
+Ze względu na bezpieczeństwo bazy danych szczególna uwaga zostanie przywiązana do następujących kwestii:
+\begin{itemize}
+\item Przewidywanie podatności na etapie tworzenia
+\item Zabezpieczenia uwierzytelniania
+\item Logowanie prób uwierzytelnienia
+\item Logowanie działań zabronionych dla użytkownika
+\item Zapewnienie wydajności na stałym poziomie
+\item Zapewnienie bezawaryjnego działania
+\item Zapewnienie uprawnionym użytkownikom dostępu do odpowiednich grup rekordów
+\item Opracowanie strategii kopii zapasowych
+\end{itemize}
+
+\end{document}

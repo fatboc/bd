@@ -1,0 +1,9 @@
+Diagram przypadków użycia
+np opiekun przeglada oceny ucznia
+nauczyciel wystawia oceny
+administrator dodaje i przypisuje konta
+Język UML
+
+
+Indeksy takie jak wyszukiwanie po PESELU orz widoki takie jak widok ocen ucznia sekwencje triggery procedury składowane
+Relacje 1 do zera dla relacji osoba-uczeń-nauczyciel-opiekun

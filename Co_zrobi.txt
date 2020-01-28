@@ -1,0 +1,16 @@
+
+triggery - średnia, ??
+konta użytkowników ich role np. uczen moze czytac tylko swoje rekordy, nie moze modyfikować, nauczyciel nie moze modyfikowac osób itp.
+widoki m.in. uwag
+procedury wyswietlania danych dla konkretnych uzytkownikow za pomocą stworzonych widoków 
+procedury modyfikacji i usuwania ocen, uwag, uzytkowników, itp. (usuniecie osoby powoduje usuniecie powiazanych rekordów)
+mozna dac sekwencje (nie wiem po co, ale wspominał)
+
+poprawic diagram uzycia - opiekun dziedziczy po uczniu, wychowawca po nauczycielu, uzytkownicy na zewnatrz diagramu, role wewnątrz diagramu, przy adminie zostawic jedynie ogólne "zarządzanie bazą"
+
+
+
+
+
+
+
